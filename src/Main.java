@@ -9,8 +9,8 @@ public class Main {
         double count = (Math.ceil(perimeter / rollWidth));
         double rollLength = 10;
         double height = 2.9;
-        double numberOfCanvas = rollLength / height;
-        double numberOfRolls = count / numberOfCanvas;
+        int numberOfCanvas = (int) ((int) rollLength / height);
+        int numberOfRolls = (int) count / numberOfCanvas;
         System.out.print(Math.ceil(numberOfRolls));
     }
 }
